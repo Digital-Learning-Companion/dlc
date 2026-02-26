@@ -15,6 +15,6 @@ cd dlc
 
 ## Origins and scope
 
-DLC began as a classroom aid for fraction multiplication/division. 
-The repo includes early math primitives and routing, alongside the current 
+DLC began as a classroom aid for fraction multiplication/division.
+The repo includes early math primitives and routing, alongside the current
 writing.structure demo as a parallel experimentation track.
