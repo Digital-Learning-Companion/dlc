@@ -1,0 +1,6 @@
+[submodule "dlc_web"]
+	path = dlc_web
+	url = https://github.com/ih8scargo/dlc_web.git
+[submodule "dlc_brain"]
+	path = dlc_brain
+	url = https://github.com/ih8scargo/dlc_brain.git
