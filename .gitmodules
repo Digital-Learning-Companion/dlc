@@ -1,7 +1,7 @@
 [submodule "dlc_web"]
-	path = dlc_web
-	url = https://github.com/Digital-Learning_Companion-ih8scargo/dlc_web.git
-	
+  path = dlc_web
+  url = https://github.com/Digital-Learning-Companion/dlc_web.git
+
 [submodule "dlc_brain"]
-	path = dlc_brain
-	url = https://github.com/Digital-Learning_Companion-ih8scargo/dlc_brain.git
+  path = dlc_brain
+  url = https://github.com/Digital-Learning-Companion/dlc_brain.git
