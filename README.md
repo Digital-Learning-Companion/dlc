@@ -115,16 +115,20 @@ Both components are included as submodules.
 Clone the meta repository with submodules:
 
 git clone --recurse-submodules https://github.com/Digital-Learning-Companion/dlc.git
-cd dlc
 
+```
+cd dlc
+```
 🧠 Start the Brain (deterministic policy engine)
-cd dlc_brain
+```cd dlc_brain
 PYTHONPATH=. python -m uvicorn dlc.app:app --port 8000
+```
 
 🐦 Start the Bird (Phoenix interface)
+```
 cd dlc_web
 mix phx.server
-
+```
 
 ---
 
