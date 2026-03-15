@@ -118,7 +118,8 @@ git clone --recurse-submodules https://github.com/Digital-Learning-Companion/dlc
 cd dlc
 ```
 ## 🧠 Start the Brain (deterministic policy engine)
-```cd dlc_brain
+```
+cd dlc_brain
 PYTHONPATH=. python -m uvicorn dlc.app:app --port 8000
 ```
 
