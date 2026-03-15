@@ -67,8 +67,62 @@ The system tracks the development of:
 
 and delivers deterministic instructional scaffolding as students revise their work.
 
-*(Diagram illustrating this flow will appear here.)*
+![CER ESM Flow](docs/cer-esm-flow.png)
 
 ---
 
 # Repository Structure
+
+dlc
+├── dlc_brain
+└── dlc_web
+
+
+Both components are included as submodules.
+
+---
+
+# Quickstart
+
+Clone the meta repository with submodules:
+
+
+git clone --recurse-submodules https://github.com/Digital-Learning-Companion/dlc.git
+
+cd dlc
+
+
+Run the deterministic policy engine:
+
+
+cd dlc_brain
+PYTHONPATH=. python -m uvicorn dlc.app:app --port 8000
+
+
+Run the Phoenix interface:
+
+
+cd dlc_web
+mix phx.server
+
+
+---
+
+# Architecture Context
+
+The DLC sits within the broader architecture ecosystem:
+
+Emergent State Machine  
+https://github.com/emergent-state-machine/esm-spec
+
+Controlled Mutation Layer  
+https://github.com/controlled-mutation-layer
+
+---
+
+# Status
+
+MVP writing tutor operational.
+
+The system demonstrates deterministic instructional feedback for structured writing tasks.
+
