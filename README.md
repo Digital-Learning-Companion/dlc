@@ -110,8 +110,7 @@ Both components are included as submodules.
 
 # 🚀 Quickstart
 
-##  Clone the meta repository with submodules:
-
+Clone the meta repository with submodules:
 ```
 git clone --recurse-submodules https://github.com/Digital-Learning-Companion/dlc.git
 ```
