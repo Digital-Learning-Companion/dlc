@@ -107,6 +107,12 @@ dlc
 Both components are included as submodules.
 
 ---
+# System Requirements
+• Python 3.11+
+• Elixir / Phoenix
+• Node.js (Phoenix assets)
+
+---
 
 # 🚀 Quickstart
 
