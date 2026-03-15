@@ -67,6 +67,9 @@ The system tracks the development of:
 
 and delivers deterministic instructional scaffolding as students revise their work.
 
+<p align="center">
+  <img src="docs/cer-esm-flow.png" width="650">
+</p>
 ![CER ESM Flow](docs/cer-esm-flow.png)
 
 ---
