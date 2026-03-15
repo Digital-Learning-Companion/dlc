@@ -11,7 +11,7 @@ It demonstrates how instructional AI systems can provide structured guidance whi
 ## System Architecture
 
 The DLC uses a two-component **Bird–Brain architecture** built on the Emergent State Machine.
-
+```
 Student Writing
       │
       ▼
@@ -25,7 +25,7 @@ Emergent State Machine reasoning loop
       │
       ▼
 Deterministic instructional guidance
-
+```
 
 This architecture separates:
 
