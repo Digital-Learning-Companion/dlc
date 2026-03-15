@@ -97,9 +97,11 @@ and delivers deterministic instructional scaffolding as students revise their wo
 
 # Repository Structure
 
+```
 dlc
 ├── dlc_brain
 └── dlc_web
+```
 
 
 Both components are included as submodules.
