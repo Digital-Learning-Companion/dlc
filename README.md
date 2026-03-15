@@ -1,20 +1,74 @@
-# DLC
+# Digital Learning Companion (DLC)
 
-DLC Writing: Structured feedback as you work.
+Deterministic learning systems for writing and reasoning.
 
-This meta repo launches:
-- dlc_web (Phoenix LiveView "Bird" UI)
-- dlc_brain (Python "Brain" policy engine)
+The **Digital Learning Companion (DLC)** is a reference implementation of the **Emergent State Machine (ESM)** architecture applied to education.
 
-## Quickstart
+It demonstrates how instructional AI systems can provide structured guidance without relying on opaque model behavior.
 
-Clone with submodules:
+---
 
-git clone --recurse-submodules https://github.com/ih8scargo/dlc.git
-cd dlc
+# Architecture
 
-## Origins and scope
+The DLC uses a two-component architecture:
 
-DLC began as a classroom aid for fraction multiplication/division.
-The repo includes early math primitives and routing, alongside the current
-writing.structure demo as a parallel experimentation track.
+### dlc_web
+
+Phoenix LiveView interface ("Bird")
+
+Responsible for:
+
+• student interaction  
+• writing workspace  
+• telemetry visualization  
+• instructional messaging
+
+---
+
+### dlc_brain
+
+FastAPI deterministic policy engine ("Brain")
+
+Responsible for:
+
+• signal extraction  
+• writing state construction  
+• instructional gating  
+• policy projection  
+• deterministic guidance generation
+
+---
+
+# The ESM Learning Loop
+
+The DLC implements the full instructional reasoning loop defined by the Emergent State Machine architecture:
+
+Observation  
+→ Signal extraction  
+→ Writing state construction  
+→ Instructional gate  
+→ Policy projection  
+→ Instructional action  
+→ Learning evolution
+
+This allows the system to guide students through interpretable writing states rather than producing opaque feedback.
+
+---
+
+# CER Writing Example
+
+The current MVP focuses on argumentative writing structure.
+
+The system tracks the development of:
+
+• Claim  
+• Evidence  
+• Reasoning  
+
+and delivers deterministic instructional scaffolding as students revise their work.
+
+*(Diagram illustrating this flow will appear here.)*
+
+---
+
+# Repository Structure
