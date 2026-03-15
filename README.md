@@ -4,38 +4,59 @@ Deterministic learning systems for writing and reasoning.
 
 The **Digital Learning Companion (DLC)** is a reference implementation of the **Emergent State Machine (ESM)** architecture applied to education.
 
-It demonstrates how instructional AI systems can provide structured guidance without relying on opaque model behavior.
+It demonstrates how instructional AI systems can provide structured guidance while keeping reasoning and instructional policy transparent and inspectable.
 
 ---
 
-# Architecture
+## System Architecture
 
-The DLC uses a two-component architecture:
+The DLC uses a two-component **Bird–Brain architecture** built on the Emergent State Machine.
 
-### dlc_web
+Student Writing
+      │
+      ▼
+dlc_web  (Phoenix LiveView UI)
+      │
+      ▼
+dlc_brain  (Deterministic policy engine)
+      │
+      ▼
+Emergent State Machine reasoning loop
+      │
+      ▼
+Deterministic instructional guidance
 
-Phoenix LiveView interface ("Bird")
 
-Responsible for:
+This architecture separates:
 
-• student interaction  
-• writing workspace  
-• telemetry visualization  
+• interaction — handled by the Bird (UI)
+• reasoning — handled by the Brain (policy engine)
+• instructional structure — defined by the Emergent State Machine
+
+This separation allows learning systems to remain deterministic, auditable, and inspectable.
+
+
+System Components
+dlc_web — "Bird"
+
+Phoenix LiveView interface responsible for:
+
+• student interaction
+• writing workspace
+• telemetry visualization
 • instructional messaging
 
----
+dlc_brain — "Brain"
 
-### dlc_brain
+FastAPI deterministic reasoning and policy engine responsible for:
 
-FastAPI deterministic policy engine ("Brain")
-
-Responsible for:
-
-• signal extraction  
-• writing state construction  
-• instructional gating  
-• policy projection  
+• signal extraction
+• writing state construction
+• instructional gating
+• policy projection
 • deterministic guidance generation
+
+The Brain implements the instructional reasoning loop defined by the Emergent State Machine.
 
 ---
 
