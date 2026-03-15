@@ -110,6 +110,8 @@ Both components are included as submodules.
 
 # 🚀 Quickstart
 
+Run the deterministic reasoning engine and the Phoenix interface locally.
+
 Clone the meta repository with submodules:
 ```
 git clone --recurse-submodules https://github.com/Digital-Learning-Companion/dlc.git
