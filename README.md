@@ -113,7 +113,6 @@ Both components are included as submodules.
 Clone the meta repository with submodules:
 ```
 git clone --recurse-submodules https://github.com/Digital-Learning-Companion/dlc.git
-```
 cd dlc
 ```
 ## 🧠 Start the Brain (deterministic policy engine)
